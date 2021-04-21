@@ -29,6 +29,8 @@ WebDriver driver;
 	public void containsText() throws InterruptedException {
 		driver.findElement(By.xpath("//a[contains(text(),'Projects')]")).click();
 		Thread.sleep(3000L);
+		driver.findElement(By.xpath("//a[contains(text(),'W3C Recommendation')]")).click();
+		Thread.sleep(3000L);
 	}
 	
 	

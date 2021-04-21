@@ -29,9 +29,10 @@ WebDriver driver;
 	public void idAttribute() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@id='search']")).sendKeys("theory of everything");
 		Thread.sleep(3000L);
+		driver.findElement(By.xpath("//*[@id='guide-icon']")).click();
+		Thread.sleep(3000L);
 	}
-	
-	
+		
 	@AfterTest
 	public void closeBrowser() {
 		driver.close();

@@ -28,11 +28,13 @@ WebDriver driver;
 	// Here xPath is used with 'text' to find the web element.
 	@Test
 	public void text() throws InterruptedException {
-		WebElement text = driver.findElement(By.xpath("//p[text()='Copyright © WallpaperCave 2014 - 2021. All Right Reserved.']"));
-		System.out.println(text);
+		WebElement text1 = driver.findElement(By.xpath("//p[text()='Copyright © WallpaperCave 2014 - 2021. All Right Reserved.']"));
+		System.out.println(text1);
+		Thread.sleep(3000L);
+		WebElement text2 = driver.findElement(By.xpath("//h1[text()='Welcome to WallpaperCave!']"));
+		System.out.println(text2);
 		Thread.sleep(3000L);
 	}
-	
 	
 	@AfterTest
 	public void closeBrowser() {

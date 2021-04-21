@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7483" started-at="2021-04-21T00:47:47 EDT" finished-at="2021-04-21T00:47:54 EDT">
+  <suite name="Default suite" duration-ms="10122" started-at="2021-04-21T08:30:46 EDT" finished-at="2021-04-21T08:30:56 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7483" started-at="2021-04-21T00:47:47 EDT" finished-at="2021-04-21T00:47:54 EDT">
-      <class name="xPath.XpathContains">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:xPath.XpathContains@32709393]" name="openBrowser" is-config="true" duration-ms="4081" started-at="2021-04-21T00:47:47 EDT" finished-at="2021-04-21T00:47:51 EDT">
+    <test name="Default test" duration-ms="10122" started-at="2021-04-21T08:30:46 EDT" finished-at="2021-04-21T08:30:56 EDT">
+      <class name="xPath.XpathText">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:xPath.XpathText@32709393]" name="openBrowser" is-config="true" duration-ms="3820" started-at="2021-04-21T08:30:46 EDT" finished-at="2021-04-21T08:30:50 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="containsText()[pri:0, instance:xPath.XpathContains@32709393]" name="containsText" duration-ms="3211" started-at="2021-04-21T00:47:51 EDT" finished-at="2021-04-21T00:47:54 EDT">
+        <test-method status="PASS" signature="text()[pri:0, instance:xPath.XpathText@32709393]" name="text" duration-ms="6043" started-at="2021-04-21T08:30:50 EDT" finished-at="2021-04-21T08:30:56 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- containsText -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:xPath.XpathContains@32709393]" name="closeBrowser" is-config="true" duration-ms="163" started-at="2021-04-21T00:47:54 EDT" finished-at="2021-04-21T00:47:54 EDT">
+        </test-method> <!-- text -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:xPath.XpathText@32709393]" name="closeBrowser" is-config="true" duration-ms="233" started-at="2021-04-21T08:30:56 EDT" finished-at="2021-04-21T08:30:56 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- xPath.XpathContains -->
+      </class> <!-- xPath.XpathText -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

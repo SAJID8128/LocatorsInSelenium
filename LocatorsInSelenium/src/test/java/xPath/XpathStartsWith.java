@@ -29,6 +29,8 @@ WebDriver driver;
 	public void startsWith() throws InterruptedException {
 		driver.findElement(By.xpath("//p[starts-with(@id,'DrpDwnMn05')]")).click();
 		Thread.sleep(3000L);
+		driver.findElement(By.xpath("//p[starts-with(@id,'DrpDwnMn06')]")).click();
+		Thread.sleep(5000L);
 	}
 	
 	

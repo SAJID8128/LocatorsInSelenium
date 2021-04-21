@@ -29,6 +29,9 @@ WebDriver driver;
 	public void contains() throws InterruptedException {
 		driver.findElement(By.xpath("//input[contains(@id,'mce-EMAIL')]")).sendKeys("abc123@hotmail.com");
 		Thread.sleep(3000L);
+		driver.findElement(By.xpath("//input[contains(@class,'button')]")).click();
+		Thread.sleep(3000L);
+		
 	}
 	
 	@AfterTest

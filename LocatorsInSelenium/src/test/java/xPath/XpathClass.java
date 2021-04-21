@@ -28,10 +28,12 @@ WebDriver driver;
 	@Test
 	public void classAttribute() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys("the god particle");
-		Thread.sleep(3000L);
+		Thread.sleep(2000L);
+		driver.findElement(By.xpath("//input[@class='gNO89b']")).click();
+		Thread.sleep(2000L);
+		
 	}
-	
-	
+		
 	@AfterTest
 	public void closeBrowser() {
 		driver.close();
