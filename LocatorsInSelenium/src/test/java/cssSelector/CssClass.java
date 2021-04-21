@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
 public class CssClass {
 	
 WebDriver driver;
@@ -24,6 +25,10 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
+	/**
+	 * When cssSelector is used with class, a dot is used before the value of the class as shown
+	 * below with '.inputtext'.
+	 */
 	@Test
 	public void classAttribute() throws InterruptedException {
 		driver.findElement(By.cssSelector(".inputtext")).sendKeys("xyz321@hotmail.com");;

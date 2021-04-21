@@ -24,6 +24,10 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
+	/**
+	 * When cssSelector is used with and id, a hashtag (#) is used before the value 
+	 * of the id as shown here with '#email'.
+	 */
 	@Test
 	public void classAttribute() throws InterruptedException {
 		driver.findElement(By.cssSelector("#email")).sendKeys("abc123@gmail.com");;

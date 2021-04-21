@@ -24,7 +24,7 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	
+	// Here the direct locator 'link text' is used to find the web element.
 	@Test
 	public void linkTextAttribute() throws InterruptedException {
 		driver.findElement(By.linkText("Downloads")).click();

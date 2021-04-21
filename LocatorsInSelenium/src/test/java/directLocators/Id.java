@@ -24,7 +24,7 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	
+	// Here the direct locator 'id' is used to find the web element.
 	@Test
 	public void idAttribute() throws InterruptedException {
 		driver.findElement(By.id("search")).sendKeys("selenium locators");

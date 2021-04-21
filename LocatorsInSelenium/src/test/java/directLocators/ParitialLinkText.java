@@ -24,7 +24,7 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	
+	// Here the direct locator is 'partial link text' is used to find the web element.
 	@Test
 	public void partialLinkTextAttribute() throws InterruptedException {
 		driver.findElement(By.partialLinkText("#celebrities &")).click();

@@ -24,7 +24,7 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	
+	// Here the direct locator 'name' is used to find the web element.
 	@Test
 	public void nameAttribute() throws InterruptedException {
 		driver.findElement(By.name("q")).sendKeys("solar eclipse");

@@ -1,4 +1,4 @@
-package directLocators;
+package cssSelector;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,24 +11,25 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Class {
+public class CssNameAttribute {
 	
-	WebDriver driver;
+WebDriver driver;
 	
 	@BeforeTest
 	public void openBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://www.google.com/");
+		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
-	
-	// Here the direct locator 'class' is used to find the web element.
+	/**
+	 * Here cssSelector is used with the attribute 'name' and its value 'email'.
+	 */
 	@Test
-	public void classAttribute() throws InterruptedException {
-		driver.findElement(By.className("MV3Tnb")).click();
-		Thread.sleep(5000L);
+	public void nameAttribute() throws InterruptedException {
+		driver.findElement(By.cssSelector("[name=email]")).sendKeys("faruqbhai@gmail.com");;
+		Thread.sleep(3000L);
 	}
 	
 	@AfterTest
@@ -36,6 +37,6 @@ public class Class {
 		driver.close();
 		
 	}
-	
+
 
 }

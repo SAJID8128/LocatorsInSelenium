@@ -24,7 +24,7 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	
+	// Here xPath is used with 'class' to find the web element.
 	@Test
 	public void tagAttribute() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys("the god particle");

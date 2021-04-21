@@ -24,7 +24,7 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	
+	// Here xPath is used with 'contains-text' to find the web element.
 	@Test
 	public void tagAttribute() throws InterruptedException {
 		driver.findElement(By.xpath("//a[contains(text(),'#hot')]")).click();

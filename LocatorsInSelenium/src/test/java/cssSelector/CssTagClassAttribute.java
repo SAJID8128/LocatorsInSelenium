@@ -24,6 +24,10 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
+	/**
+	 * Here cssSelector is used with a combination of tag,class, and attribute to distinguish
+	 * email field from the password field.
+	 */
 	@Test
 	public void classAttribute() throws InterruptedException {
 		driver.findElement(By.cssSelector("input.inputtext[data-testid=royal_email")).sendKeys("java_is_easy@gmail.com");

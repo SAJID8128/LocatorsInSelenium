@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
 public class Tag {
 	
 WebDriver driver;
@@ -24,7 +25,10 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	
+	/**
+	 * Here the direct locator 'tag' is used to find multiple web elements and 
+	 * print out the how many have the 'a' tag.
+	 */
 	@Test
 	public void tagAttribute() throws InterruptedException {
 		int links = driver.findElements(By.tagName("a")).size();
