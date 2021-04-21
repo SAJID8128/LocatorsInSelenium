@@ -24,13 +24,12 @@ WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	// Here xPath is used with 'contains-text' to find the web element.
+	// Here xPath is used with 'contains' to find the web element.
 	@Test
-	public void tagAttribute() throws InterruptedException {
-		driver.findElement(By.xpath("//a[contains(text(),'#hot')]")).click();
+	public void containsText() throws InterruptedException {
+		driver.findElement(By.xpath("//input[contains(@id,'mce-EMAIL')]")).sendKeys("abc123@hotmail.com");
 		Thread.sleep(3000L);
 	}
-	
 	
 	@AfterTest
 	public void closeBrowser() {
