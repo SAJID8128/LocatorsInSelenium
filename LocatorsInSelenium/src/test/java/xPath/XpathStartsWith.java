@@ -26,7 +26,7 @@ WebDriver driver;
 	
 	// Here xPath is used with 'starts-with' to find the web element.
 	@Test
-	public void tagAttribute() throws InterruptedException {
+	public void startsWith() throws InterruptedException {
 		driver.findElement(By.xpath("//p[starts-with(@id,'DrpDwnMn05')]")).click();
 		Thread.sleep(3000L);
 	}

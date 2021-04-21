@@ -26,7 +26,7 @@ WebDriver driver;
 	
 	// Here xPath is used with 'contains' to find the web element.
 	@Test
-	public void containsText() throws InterruptedException {
+	public void contains() throws InterruptedException {
 		driver.findElement(By.xpath("//input[contains(@id,'mce-EMAIL')]")).sendKeys("abc123@hotmail.com");
 		Thread.sleep(3000L);
 	}

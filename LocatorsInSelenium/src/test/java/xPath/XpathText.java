@@ -27,7 +27,7 @@ WebDriver driver;
 	
 	// Here xPath is used with 'text' to find the web element.
 	@Test
-	public void tagAttribute() throws InterruptedException {
+	public void text() throws InterruptedException {
 		WebElement text = driver.findElement(By.xpath("//p[text()='Copyright © WallpaperCave 2014 - 2021. All Right Reserved.']"));
 		System.out.println(text);
 		Thread.sleep(3000L);

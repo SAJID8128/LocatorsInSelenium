@@ -26,7 +26,7 @@ WebDriver driver;
 	
 	// Here xPath is used with 'id' to find the web element.
 	@Test
-	public void tagAttribute() throws InterruptedException {
+	public void idAttribute() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@id='search']")).sendKeys("theory of everything");
 		Thread.sleep(3000L);
 	}

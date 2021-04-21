@@ -26,7 +26,7 @@ WebDriver driver;
 	
 	
 	@Test
-	public void tagAttribute() throws InterruptedException {
+	public void containsText() throws InterruptedException {
 		driver.findElement(By.xpath("//a[contains(text(),'Projects')]")).click();
 		Thread.sleep(3000L);
 	}
