@@ -1,4 +1,4 @@
-package cssPseudo_Classes;
+package cssPseudoClasses;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class CssNthLastChild {
+public class CssNthChild {
 	
 	WebDriver driver;
 
@@ -27,8 +27,7 @@ public class CssNthLastChild {
 
 	/** A CSS pseudo-class is a keyword added to a selector that specifies a 
 	 * special state of the selected web element.
-	 * Nth-last-child returns elements based on their position in a group of siblings,
-	 * counting from the end.
+	 * Nth-child returns elements based on their position in a group of siblings.
 	 * Here the pseudo-class 'nth-child' was used to choose a specific 
 	 * element from the list of job roles by specifying the place number on 
 	 * the list after 'nth-child' for that specific job role.
@@ -37,7 +36,7 @@ public class CssNthLastChild {
 	public void firstChild() throws InterruptedException {
 		driver.findElement(By.cssSelector("#job_role")).click();
 		Thread.sleep(2000L);
-		driver.findElement(By.cssSelector("select#job_role >:nth-last-child(4)")).click();
+		driver.findElement(By.cssSelector("select#job_role >:nth-child(4)")).click();
 		Thread.sleep(2000L);
 		driver.findElement(By.cssSelector("#job_role")).click();
 	}

@@ -1,4 +1,4 @@
-package cssPseudo_Classes;
+package cssPseudoClasses;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,8 +11,8 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class CssFirstChild {
-
+public class CssLastChild {
+	
 	WebDriver driver;
 
 	@BeforeTest
@@ -23,19 +23,20 @@ public class CssFirstChild {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
+	
 
-
-	/** A CSS pseudo-class is a keyword added to a selector that specifies a 
+	/**  A CSS pseudo-class is a keyword added to a selector that specifies a 
 	 * special state of the selected web element.
-	 * First-child returns the first element from a group of sibling elements.
-	 * Here the pseudo-class 'first-child' was to select the first element
-	 * from the list of job roles.
+	 * Last-child returns the last element from a group of sibling elements.
+	 * Here the pseudo-class 'last-child' was used to select the last 
+	 * element from the list of job roles.
 	 */
 	@Test
 	public void firstChild() throws InterruptedException {
 		driver.findElement(By.cssSelector("#job_role")).click();
-		driver.findElement(By.cssSelector("select#job_role>:first-child"));
-		Thread.sleep(3000L);
+		Thread.sleep(2000L);
+		driver.findElement(By.cssSelector("select#job_role >:last-child")).click();
+		Thread.sleep(2000L);
 		driver.findElement(By.cssSelector("#job_role")).click();
 	}
 
@@ -44,6 +45,6 @@ public class CssFirstChild {
 		driver.close();
 
 	}
+ 
 
 }
-
