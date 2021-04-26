@@ -25,7 +25,10 @@ public class CssFirstChild {
 	}
 
 
-	/** Here the pseudo-class 'first-child' was to select the first element
+	/** A CSS pseudo-class is a keyword added to a selector that specifies a 
+	 * special state of the selected web element.
+	 * First-child returns the first element from a group of sibling elements.
+	 * Here the pseudo-class 'first-child' was to select the first element
 	 * from the list of job roles.
 	 */
 	@Test

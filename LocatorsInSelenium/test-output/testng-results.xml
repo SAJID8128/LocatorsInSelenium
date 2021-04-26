@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10122" started-at="2021-04-21T08:30:46 EDT" finished-at="2021-04-21T08:30:56 EDT">
+  <suite name="Default suite" duration-ms="8027" started-at="2021-04-25T21:37:57 EDT" finished-at="2021-04-25T21:38:05 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10122" started-at="2021-04-21T08:30:46 EDT" finished-at="2021-04-21T08:30:56 EDT">
-      <class name="xPath.XpathText">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:xPath.XpathText@32709393]" name="openBrowser" is-config="true" duration-ms="3820" started-at="2021-04-21T08:30:46 EDT" finished-at="2021-04-21T08:30:50 EDT">
+    <test name="Default test" duration-ms="8027" started-at="2021-04-25T21:37:57 EDT" finished-at="2021-04-25T21:38:05 EDT">
+      <class name="cssPseudo_Classes.CssNthLastChild">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:cssPseudo_Classes.CssNthLastChild@32709393]" name="openBrowser" is-config="true" duration-ms="3183" started-at="2021-04-25T21:37:57 EDT" finished-at="2021-04-25T21:38:00 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="text()[pri:0, instance:xPath.XpathText@32709393]" name="text" duration-ms="6043" started-at="2021-04-21T08:30:50 EDT" finished-at="2021-04-21T08:30:56 EDT">
+        <test-method status="PASS" signature="firstChild()[pri:0, instance:cssPseudo_Classes.CssNthLastChild@32709393]" name="firstChild" duration-ms="4672" started-at="2021-04-25T21:38:00 EDT" finished-at="2021-04-25T21:38:04 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- text -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:xPath.XpathText@32709393]" name="closeBrowser" is-config="true" duration-ms="233" started-at="2021-04-21T08:30:56 EDT" finished-at="2021-04-21T08:30:56 EDT">
+        </test-method> <!-- firstChild -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:cssPseudo_Classes.CssNthLastChild@32709393]" name="closeBrowser" is-config="true" duration-ms="148" started-at="2021-04-25T21:38:04 EDT" finished-at="2021-04-25T21:38:05 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- xPath.XpathText -->
+      </class> <!-- cssPseudo_Classes.CssNthLastChild -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

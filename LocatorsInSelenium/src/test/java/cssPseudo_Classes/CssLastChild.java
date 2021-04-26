@@ -25,7 +25,10 @@ public class CssLastChild {
 	}
 	
 
-	/** Here the pseudo-class 'last-child' was used to select the last 
+	/**  A CSS pseudo-class is a keyword added to a selector that specifies a 
+	 * special state of the selected web element.
+	 * Last-child returns the last element from a group of sibling elements.
+	 * Here the pseudo-class 'last-child' was used to select the last 
 	 * element from the list of job roles.
 	 */
 	@Test

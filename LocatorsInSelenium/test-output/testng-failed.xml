@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="xPath.XpathContains">
+      <class name="cssPseudo_Classes.CssFirstChild">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="containsText"/>
           <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="firstChild"/>
         </methods>
-      </class> <!-- xPath.XpathContains -->
+      </class> <!-- cssPseudo_Classes.CssFirstChild -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
