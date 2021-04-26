@@ -34,7 +34,7 @@ public class CssNthLastChild {
 	 * the list after 'nth-child' for that specific job role.
 	 */
 	@Test
-	public void firstChild() throws InterruptedException {
+	public void nthLastChild() throws InterruptedException {
 		driver.findElement(By.cssSelector("#job_role")).click();
 		Thread.sleep(2000L);
 		driver.findElement(By.cssSelector("select#job_role >:nth-last-child(4)")).click();

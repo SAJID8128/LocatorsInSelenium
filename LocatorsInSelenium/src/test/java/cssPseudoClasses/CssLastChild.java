@@ -32,7 +32,7 @@ public class CssLastChild {
 	 * element from the list of job roles.
 	 */
 	@Test
-	public void firstChild() throws InterruptedException {
+	public void lastChild() throws InterruptedException {
 		driver.findElement(By.cssSelector("#job_role")).click();
 		Thread.sleep(2000L);
 		driver.findElement(By.cssSelector("select#job_role >:last-child")).click();
