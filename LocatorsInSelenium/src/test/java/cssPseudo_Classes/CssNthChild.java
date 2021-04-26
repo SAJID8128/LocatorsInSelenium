@@ -1,4 +1,4 @@
-package directLocators;
+package cssPseudo_Classes;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,31 +11,37 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Class {
+public class CssNthChild {
 	
 	WebDriver driver;
-	
+
 	@BeforeTest
 	public void openBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://www.google.com/");
+		driver.get("https://developer.salesforce.com/signup");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	// Here the direct locator 'class' is used to find the web element.
+
+	/** Here the pseudo-class 'nth-child' was used to choose a specific 
+	 * element from the list of job roles by specifying the place number on 
+	 * the list after 'nth-child' for that specific job role.
+	 */
 	@Test
-	public void classAttribute() throws InterruptedException {
-		driver.findElement(By.className("MV3Tnb")).click();
-		Thread.sleep(3000L);
+	public void firstChild() throws InterruptedException {
+		driver.findElement(By.cssSelector("#job_role")).click();
+		Thread.sleep(2000L);
+		driver.findElement(By.cssSelector("select#job_role >:nth-child(4)")).click();
+		Thread.sleep(2000L);
+		driver.findElement(By.cssSelector("#job_role")).click();
 	}
-	
+
 	@AfterTest
 	public void closeBrowser() {
 		driver.close();
-		
+
 	}
-	
 
 }

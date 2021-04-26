@@ -1,4 +1,4 @@
-package directLocators;
+package cssPseudo_Classes;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,31 +11,36 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Class {
-	
+public class CssFirstChild {
+
 	WebDriver driver;
-	
+
 	@BeforeTest
 	public void openBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://www.google.com/");
+		driver.get("https://developer.salesforce.com/signup");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
-	
-	// Here the direct locator 'class' is used to find the web element.
+
+
+	/** Here the pseudo-class 'first-child' was to select the first element
+	 * from the list of job roles.
+	 */
 	@Test
-	public void classAttribute() throws InterruptedException {
-		driver.findElement(By.className("MV3Tnb")).click();
+	public void firstChild() throws InterruptedException {
+		driver.findElement(By.cssSelector("#job_role")).click();
+		driver.findElement(By.cssSelector("select#job_role>:first-child"));
 		Thread.sleep(3000L);
+		driver.findElement(By.cssSelector("#job_role")).click();
 	}
-	
+
 	@AfterTest
 	public void closeBrowser() {
 		driver.close();
-		
+
 	}
-	
 
 }
+
