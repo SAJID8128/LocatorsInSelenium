@@ -30,7 +30,7 @@ WebDriver driver;
 	 */
 	@Test
 	public void classAttribute() throws InterruptedException {
-		driver.findElement(By.cssSelector("#email")).sendKeys("abc123@gmail.com");;
+		driver.findElement(By.cssSelector("#email")).sendKeys("abc123@gmail.com");
 		Thread.sleep(3000L);
 	}
 	

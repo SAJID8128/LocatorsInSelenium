@@ -28,7 +28,7 @@ WebDriver driver;
 	 */
 	@Test
 	public void nameAttribute() throws InterruptedException {
-		driver.findElement(By.cssSelector("[name=email]")).sendKeys("faruqbhai@gmail.com");;
+		driver.findElement(By.cssSelector("[name=email]")).sendKeys("faruqbhai@gmail.com");
 		Thread.sleep(3000L);
 	}
 	
